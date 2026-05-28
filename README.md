@@ -1,51 +1,49 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on mambaforge base image.
+# docker-BCFtools-score
+Boutros Lab Docker image for `bcftools` with the Broad Institute `score` plugin preinstalled.
 
-The base image is pulled from https://hub.docker.com/r/condaforge/mambaforge
+The image is built with a Miniforge-based builder stage and ships a runtime environment configured for `bcftools` plugins through the `BCFTOOLS_PLUGINS` environment variable.
 
-# Documentation
-Docker introduction [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3190419/Docker+Introduction)
-
-Dockerfile Best Practices [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3189770/Dockerfile+Best+Practices)
-
-Docker image versioning standard [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3188472/Docker+image+versioning+standardization)
-
+---
 
 # Version
 | Tool | Version |
 |------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
+| bcftools | 1.22 |
+| score | 1.22-20250819 |
 
 ---
 
 ## Discussions
 
-- [Issue tracker](<link-to-issues-page>) to report errors and enhancement ideas.
-- Discussions can take place in [docker-<tool> Discussions](<link-to-discussions>)
-- [docker-<tool> pull requests](<link-to-pull-requests>) are also open for discussion
+- [Issue tracker](https://github.com/TheBoutrosLab/docker-BCFtools-score/issues) to report errors and enhancement ideas.
+- Discussions can take place in [docker-BCFtools-score Discussions](https://github.com/TheBoutrosLab/docker-BCFtools-score/discussions).
+- [docker-BCFtools-score pull requests](https://github.com/TheBoutrosLab/docker-BCFtools-score/pulls) are also open for discussion.
 
 ---
 
 ## Contributors
 
-Please see list of [Contributors](<link-to-contributors-insights>) at GitHub.
+Please see the list of [Contributors](https://github.com/TheBoutrosLab/docker-BCFtools-score/graphs/contributors) at GitHub.
 
 ---
 
 ## References
 
-1. Tool specific references can be listed here
+1. [bcftools documentation](https://samtools.github.io/bcftools/bcftools.html)
+2. [bcftools GitHub repository](https://github.com/samtools/bcftools)
+3. [Broad Institute score plugin download page](https://software.broadinstitute.org/software/score/)
+4. [Bioconda package recipe for bcftools](https://bioconda.github.io/recipes/bcftools/README.html)
+5. Petr Danecek, James K Bonfield, Jie Song, Vincent Accarpi, Rudolf Albers, Alistair Amstislavskiy, Tim JK Chan, Martin DePristo, Robert L Handsaker, Gerton Lunter, Gabor T Marth, Shane T McCarthy, Mark A Rodelsperger, Kai Ye, Gilean A McVean, Richard Durbin. Twelve years of SAMtools and BCFtools. Gigascience. 2021 Feb 16;10(2):giab008. https://doi.org/10.1093/gigascience/giab008
 
 ---
 
 ## License
 
-Author: Name1, Name2
+Author: Yash Patel
 
-[docker repo name] is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
+`docker-BCFtools-score` is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
 
-<one line to give the program's name and a brief idea of what it does.>
+`docker-BCFtools-score` provides a Docker image for `bcftools` with the Broad Institute `score` plugin.
 
 Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab") All rights reserved.
 
